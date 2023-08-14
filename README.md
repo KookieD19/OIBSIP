@@ -1,2 +1,2 @@
 # OIBSIP
-LAding page using HTML and CSS.
+Landing page using HTML and CSS.
