@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <style>
+        body {
+            background-image: url('https://wallpaperaccess.com/full/1778999.jpg');
+            font-family:'Times New Roman';
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+        }
+
+        #converter {
+            border: 2px solid #ccc;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #result {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="converter">
+        <h1>Temperature Converter</h1>
+        <label for="celsius">Celsius:</label>
+        <input type="number" id="celsius" placeholder="Enter temperature in Celsius" required>
+        <label for="fahrenheit">Fahrenheit:</label>
+        <input type="number" id="fahrenheit" placeholder="Enter temperature in Fahrenheit" required>
+        <button onclick="convertCelsiusToFahrenheit()">Convert to Fahrenheit</button>
+        <button onclick="convertFahrenheitToCelsius()">Convert to Celsius</button>
+        <button onclick="refreshData()">Refresh</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function convertCelsiusToFahrenheit() {
+            const celsius = parseFloat(document.getElementById("celsius").value);
+            const fahrenheit = (celsius * 9 / 5) + 32;
+            document.getElementById("fahrenheit").value = fahrenheit.toFixed(2);
+            document.getElementById("result").innerText = `${celsius}°C is equal to ${fahrenheit.toFixed(2)}°F`;
+        }
+
+        function convertFahrenheitToCelsius() {
+            const fahrenheit = parseFloat(document.getElementById("fahrenheit").value);
+            const celsius = (fahrenheit - 32) * 5 / 9;
+            document.getElementById("celsius").value = celsius.toFixed(2);
+            document.getElementById("result").innerText = `${fahrenheit}°F is equal to ${celsius.toFixed(2)}°C`;
+        }
+        function refreshData() 
+            {
+             location.reload();
+            }
+    </script>
+</body>
+
+</html>
