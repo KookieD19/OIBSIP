@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  header nav ul li a {
+    color: black;
+    text-decoration: none;
+  }
+  
+
+  header nav ul li a:hover{
+    color:blue;
+  }
+  .main {
+    padding: 20px;
+  }
+  
+  .flexible-container {
+    background:url('hero.jpg');
+    background-size: cover;
+    display: flex;
+    height: 556px;
+    margin-bottom: 3px;
+    padding-bottom: 0px;
+    background-color: black;
+    color: white;
+  }
+
+  .half-width {
+    width: 50%;
+    padding-left: 6%;
+    padding-top: 7%;
+    text-align: justify;
+    padding-bottom: 20px;
+  }
+  
+  .half-width p {
+    padding-right: 50px;
+    padding-bottom: 3%;
+  }
+
+  .half-width h1 {
+    padding-right: 50px;
+    padding-bottom: 3%;
+    text-decoration: underline;
+  }
+
+  .half-width h3 {
+    padding-right: 50px;
+    padding-bottom: 10px;
+    font-size:x-large;
+  }
+  
+  .half-width img {
+    width: 80%;
+    padding-top: 1px;
+    height: 300px;
+    width: 300px;
+  }
+  
+  .link-button {
+    text-decoration: none;
+    background-color:cadetblue;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    padding-left: 5%;
+  }
+
+  .link-button:hover{
+    background-color: transparent;
+    border: solid cadetblue 3px;
+  }
+  
+  .about1 {
+    padding-left: 3%;
+    padding-right: 5%;
+    text-align: justify;
+    color: black;
+    
+  }
+  
+  .about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .skills {
+    padding-left: 3%;
+    padding-right: 5%;
+    text-align: justify;
+    margin-top: 20px;
+  }
+  
+  .skill {
+    margin-bottom: 15px;
+  }
+  
+  .skill h3 {
+    margin: 5px 0;
+    font-size: 1.2rem;
+  }
+  
+  .skill-level {
+    width: 100%;
+    background-color: #f0f0f0;
+    height: 10px;
+    border-radius: 5px;
+  }
+  
+  .skill-level-bar {
+    height: 100%;
+    background-color: #4caf50; /* Change this color to indicate skill level */
+    border-radius: 5px;
+  }
+  
+  .experience {
+    margin-top: 20px;
+    padding-left: 3%;
+    padding-right: 5%;
+    text-align: justify;
+  }
+  
+  .job {
+    margin-bottom: 20px;
+    
+  }
+  
+  .job h3 {
+    font-size: 1.2em;
+    margin: 0;
+  }
+  
+  .date {
+    font-style: italic;
+    color: #888;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .company {
+    font-weight: bold;
+  }
+  
+  .description {
+    margin-top: 5px;
+  }
+  
+  
+  .contact {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 50px 0;
+  }
+  
+  .contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  form input,form textarea,form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  form button {
+    background-color:cadetblue;
+    color: white;
+    cursor: pointer;
+  }
+
+  footer{
+    text-align: center;
+  }
